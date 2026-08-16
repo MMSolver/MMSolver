@@ -1,8 +1,20 @@
-# Mehmet Muti
+<div align="center">
 
-### AI-Powered Development · Cybersecurity · Automation
+# MMSolver
 
-I build practical digital solutions using AI-assisted development tools while continuously developing my technical skills in software development, cybersecurity, and automation.
+### Building practical solutions with AI-assisted development.
+
+**AI-Assisted Development · Cybersecurity · Automation**
+
+</div>
+
+---
+
+## About
+
+I'm **Mehmet Muti**, focused on turning ideas into practical digital products using AI-assisted development workflows.
+
+I'm currently building real-world projects while developing a stronger foundation in software development, cybersecurity, and automation.
 
 ---
 
@@ -10,36 +22,45 @@ I build practical digital solutions using AI-assisted development tools while co
 
 ### Uğur Kuruyemiş — E-Commerce Platform
 
-A real-world e-commerce project focused on creating a secure, modern, and reliable online shopping experience.
+A real-world e-commerce platform designed around a secure, reliable, and modern shopping experience.
 
-Currently being developed with an AI-assisted development workflow.
+**Focus:** E-Commerce · Web Development · Security · AI-Assisted Development
 
----
-
-## Areas of Focus
-
-- AI-Assisted Development
-- Cybersecurity
-- Automation
-- Web Technologies
-- Full-Stack Development
+> Currently in active development.
 
 ---
 
-## Current Journey
+## Focus
 
-- Building real-world projects with AI-assisted development tools
-- Expanding my knowledge and practical skills in cybersecurity
-- Exploring automation and modern development workflows
-- Starting an 8-month Full-Stack Development program in September 2026
-- Following the program with a 2-month project development phase
+`AI-Assisted Development` · `Cybersecurity` · `Automation` · `Web Development`
 
 ---
 
-## What I'm Working Toward
+## Learning Path
 
-My goal is to combine software development, AI-assisted workflows, cybersecurity, and automation to build practical solutions for real-world problems.
+**September 2026 → Full-Stack Development**
+
+8-month Full-Stack Development program  
++ 2-month project development phase
+
+Alongside my development journey, I'm continuing to build practical experience in **cybersecurity and automation**.
 
 ---
 
-> **MMSolver** — Learn. Build. Solve.
+## Open Source & Collaboration
+
+Exploring collaborative development and contributing to projects as I continue expanding my technical experience.
+
+---
+
+## Philosophy
+
+> **Learn deeply. Build practically. Solve real problems.**
+
+<div align="center">
+
+### MMSolver
+
+**Learn · Build · Solve**
+
+</div>
