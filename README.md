@@ -47,20 +47,6 @@ Alongside my development journey, I'm continuing to build practical experience i
 
 ---
 
-## Open Source & Collaboration
-
-Exploring collaborative development and contributing to projects as I continue expanding my technical experience.
-
----
-
 ## Philosophy
 
 > **Learn deeply. Build practically. Solve real problems.**
-
-<div align="center">
-
-### MMSolver
-
-**Learn · Build · Solve**
-
-</div>
