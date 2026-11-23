@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="SPECTER: autonomous multi-agent reconnaissance and analysis swarm for authorized testing">
+<title>SPECTER: multi-agent recon &amp; analysis swarm</title>
+<defs>
+  <clipPath id="c"><rect width="1200" height="360" rx="14"/></clipPath>
+  <radialGradient id="glow" cx="0.754" cy="0.5" r="0.32"><stop offset="0" stop-color="#ff4d4d" stop-opacity="0.18"/><stop offset="1" stop-color="#ff4d4d" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#161b22" stroke-width="1"/></pattern>
+</defs>
+<style>
+  .t1 { font: 800 64px "Segoe UI", Helvetica, Arial, sans-serif; fill: #f0f6fc; letter-spacing: 6px; }
+  .t2 { font: 600 19px Consolas, "Courier New", monospace; fill: #ff4d4d; }
+  .t3 { font: 15px "Segoe UI", Helvetica, Arial, sans-serif; fill: #8b949e; }
+  .chip rect { fill: #161b22; stroke: #30363d; }
+  .chip text { font: 600 12px Consolas, monospace; fill: #c9d1d9; letter-spacing: 1px; }
+  .link { stroke: #4a2228; stroke-width: 1.6; }
+  .agent rect { fill: #161b22; stroke: #6e2a30; stroke-width: 1.2; animation: blink 2.4s ease-in-out infinite; }
+  .ntext { font: 700 11px Consolas, monospace; fill: #f0f6fc; letter-spacing: 1px; }
+  .guard { fill: none; stroke: #ff4d4d; stroke-width: 1.3; stroke-dasharray: 6 9; opacity: 0.55; transform-origin: 905px 172px; animation: spin 40s linear infinite; }
+  .glabel { font: 700 10.5px Consolas, monospace; fill: #ff4d4d; letter-spacing: 3px; }
+  .core { fill: #1c0d10; stroke: #ff4d4d; stroke-width: 2; }
+  .ring { fill: none; stroke: #ff4d4d; transform-origin: 905px 172px; animation: ping 2.4s ease-out infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes ping { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(1.9); opacity: 0; } }
+  @keyframes blink { 0%, 100% { stroke: #6e2a30; } 50% { stroke: #ff4d4d; } }
+  @media (prefers-reduced-motion: reduce) { .guard, .ring, .agent rect { animation: none; } }
+</style>
+<g clip-path="url(#c)">
+  <rect width="1200" height="360" fill="#0d1117"/><rect width="1200" height="360" fill="url(#grid)"/>
+  <rect width="1200" height="360" fill="url(#glow)"/>
+  <text x="70" y="140" class="t1">SPECTER</text>
+  <text x="72" y="180" class="t2">multi-agent recon &amp; analysis swarm</text>
+  <text x="72" y="214" class="t3">Maps the target, fingerprints services, debates every CVE lead,</text>
+  <text x="72" y="236" class="t3">and hands a human a MITRE-mapped plan. It plans, it never auto-exploits.</text>
+  <g class="chip"><rect x="72" y="262" width="186" height="28" rx="6"/><text x="165" y="281" text-anchor="middle">AUTHORIZED USE ONLY</text></g>
+  <g class="chip"><rect x="268" y="262" width="150" height="28" rx="6"/><text x="343" y="281" text-anchor="middle">SCOPE-GUARDED</text></g>
+  <g class="chip"><rect x="428" y="262" width="150" height="28" rx="6"/><text x="503" y="281" text-anchor="middle">HUMAN-GATED</text></g>
+  <circle cx="905" cy="172" r="148" class="guard"/>
+  <text x="905" y="12" text-anchor="middle" class="glabel">SCOPE GUARD</text>
+  <line x1="905" y1="172" x2="905.0" y2="64.0" class="link"/><line x1="905" y1="172" x2="1007.7" y2="138.6" class="link"/><line x1="905" y1="172" x2="968.5" y2="259.4" class="link"/><line x1="905" y1="172" x2="841.5" y2="259.4" class="link"/><line x1="905" y1="172" x2="802.3" y2="138.6" class="link"/>
+  <circle r="3.2" fill="#ff4d4d" opacity="0"><animateMotion dur="2.4s" begin="0.00s" repeatCount="indefinite" path="M905,172 L905.0,64.0"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.00s" repeatCount="indefinite"/></circle><circle r="2.6" fill="#ffb3b3" opacity="0"><animateMotion dur="2.4s" begin="1.20s" repeatCount="indefinite" path="M905.0,64.0 L905,172"/><animate attributeName="opacity" values="0;0.9;0.9;0" dur="2.4s" begin="1.20s" repeatCount="indefinite"/></circle><circle r="3.2" fill="#ff4d4d" opacity="0"><animateMotion dur="2.4s" begin="0.45s" repeatCount="indefinite" path="M905,172 L1007.7,138.6"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.45s" repeatCount="indefinite"/></circle><circle r="2.6" fill="#ffb3b3" opacity="0"><animateMotion dur="2.4s" begin="1.65s" repeatCount="indefinite" path="M1007.7,138.6 L905,172"/><animate attributeName="opacity" values="0;0.9;0.9;0" dur="2.4s" begin="1.65s" repeatCount="indefinite"/></circle><circle r="3.2" fill="#ff4d4d" opacity="0"><animateMotion dur="2.4s" begin="0.90s" repeatCount="indefinite" path="M905,172 L968.5,259.4"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="0.90s" repeatCount="indefinite"/></circle><circle r="2.6" fill="#ffb3b3" opacity="0"><animateMotion dur="2.4s" begin="2.10s" repeatCount="indefinite" path="M968.5,259.4 L905,172"/><animate attributeName="opacity" values="0;0.9;0.9;0" dur="2.4s" begin="2.10s" repeatCount="indefinite"/></circle><circle r="3.2" fill="#ff4d4d" opacity="0"><animateMotion dur="2.4s" begin="1.35s" repeatCount="indefinite" path="M905,172 L841.5,259.4"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.35s" repeatCount="indefinite"/></circle><circle r="2.6" fill="#ffb3b3" opacity="0"><animateMotion dur="2.4s" begin="2.55s" repeatCount="indefinite" path="M841.5,259.4 L905,172"/><animate attributeName="opacity" values="0;0.9;0.9;0" dur="2.4s" begin="2.55s" repeatCount="indefinite"/></circle><circle r="3.2" fill="#ff4d4d" opacity="0"><animateMotion dur="2.4s" begin="1.80s" repeatCount="indefinite" path="M905,172 L802.3,138.6"/><animate attributeName="opacity" values="0;1;1;0" dur="2.4s" begin="1.80s" repeatCount="indefinite"/></circle><circle r="2.6" fill="#ffb3b3" opacity="0"><animateMotion dur="2.4s" begin="3.00s" repeatCount="indefinite" path="M802.3,138.6 L905,172"/><animate attributeName="opacity" values="0;0.9;0.9;0" dur="2.4s" begin="3.00s" repeatCount="indefinite"/></circle>
+  <circle cx="905" cy="172" r="34" class="ring"/>
+  <circle cx="905" cy="172" r="34" class="core"/>
+  <text x="905" y="170" text-anchor="middle" class="ntext">ORCHES-</text>
+  <text x="905" y="184" text-anchor="middle" class="ntext">TRATOR</text>
+  <g class="agent"><rect x="878.0" y="51.0" width="54.0" height="26" rx="6" style="animation-delay:0.00s"/><text x="905.0" y="68.5" text-anchor="middle" class="ntext">RECON</text></g><g class="agent"><rect x="961.7" y="125.6" width="92.0" height="26" rx="6" style="animation-delay:0.45s"/><text x="1007.7" y="143.1" text-anchor="middle" class="ntext">ENUM + WEB</text></g><g class="agent"><rect x="914.9" y="246.4" width="107.2" height="26" rx="6" style="animation-delay:0.90s"/><text x="968.5" y="263.9" text-anchor="middle" class="ntext">VULN ANALYST</text></g><g class="agent"><rect x="795.5" y="246.4" width="92.0" height="26" rx="6" style="animation-delay:1.35s"/><text x="841.5" y="263.9" text-anchor="middle" class="ntext">STRATEGIST</text></g><g class="agent"><rect x="763.9" y="125.6" width="76.8" height="26" rx="6" style="animation-delay:1.80s"/><text x="802.3" y="143.1" text-anchor="middle" class="ntext">REPORTER</text></g>
+</g>
+<rect x=".5" y=".5" width="1199" height="359" rx="14" fill="none" stroke="#30363d"/>
+</svg>

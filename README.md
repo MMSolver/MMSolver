@@ -55,12 +55,21 @@ SSH loglarında **brute-force**, **user enumeration** ve **successful breach** �
 
 ### [SPECTER](https://github.com/MMSolver/specter) · multi-agent recon & analysis framework
 
+<p align="center">
+  <a href="https://github.com/MMSolver/specter"><img src="assets/specter-banner.svg" width="100%" alt="SPECTER: orchestrator ve 5 uzman agent, scope guard ile çevrili"></a>
+</p>
+
 **Yetkili** penetration test ve CTF çalışmaları için hiyerarşik bir **AI agent** sistemi. Hedefi haritalıyor, servisleri tanımlıyor ve MITRE eşlemeli, önceliklendirilmiş bir **attack plan** çıkarıyor.
 
 - Her ağ işlemi katı bir **scope guard**'dan geçer
 - Sadece plan yapar, exploit'i asla kendiliğinden çalıştırmaz (**human approval** şart)
 - CVE adayları için **false-positive** kontrolü yapan konsensüs motoru
 - 33 test, canlı web dashboard
+
+<p align="center">
+  <img src="assets/specter-demo.svg" width="92%" alt="SPECTER gerçek self-test çıktısı: recon, nmap, MS17-010 consensus tartışması (UNCERTAIN 59%), human-gated plan">
+  <br><sub>Gerçek çıktı (kısaltılmış) · repodaki güvenli <code>127.0.0.1</code> self-test · panel tartışıyor, emin değilse <b>UNCERTAIN</b> diyor</sub>
+</p>
 
 <details>
 <summary><b>Architecture</b> · agent'lar birbirini çağırmaz, ortak knowledge base üzerinden event ile haberleşir</summary>
