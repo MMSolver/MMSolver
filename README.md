@@ -2,67 +2,74 @@
 
 # Mehmet Mutioğlu
 
-### Offensive & defensive security · AI-assisted full-stack development
+### Siber Güvenlik · Sızma Testi · Güvenlik Araçları
 
-`Penetration Testing` · `Application Security` · `Blue-Team Tooling` · `Secure Full-Stack` · `LLM Integration`
+`Penetration Testing` · `Web Uygulama Güvenliği` · `Blue Team Araçları` · `Çok Kiracılı Sistem Güvenlik Testi` · `LLM Güvenliği`
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mehmetmutioglu-0a66c2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mehmetmutioglu/)
-[![Website](https://img.shields.io/badge/Web-mution.com.tr-0b6e75)](https://mution.com.tr)
-![Location](https://img.shields.io/badge/İstanbul-Türkiye-555)
+[![Web](https://img.shields.io/badge/Web-mution.com.tr-0b6e75)](https://mution.com.tr)
+![Konum](https://img.shields.io/badge/İstanbul-Türkiye-555)
 
 </div>
 
 ---
 
-## About
+## Hakkımda
 
-I build on both sides of the security line. In authorized lab and CTF environments I run end-to-end offensive scenarios (recon → web app testing → exploitation), and I turn that attacker's perspective into defensive tools and secure software. I also ship production web applications where I design the authorization, data protection and security layers myself — so I see a vulnerability the way both the attacker and the defender do.
+Güvenliğin iki tarafında da çalışıyorum. Yetkili lab ve CTF ortamlarında (Hack The Box) uçtan uca saldırı senaryoları yürütüyorum: keşif (recon) → web uygulama testi → istismar (exploitation). Bu saldırgan bakış açısını hem savunma araçlarına hem de gerçek ürünlere yönelik saldırı testlerine dönüştürüyorum.
 
-I work with an AI-assisted, test-first workflow using **Claude Code**, and I verify my own projects with automated test suites.
-
----
-
-## 🛡️ Open-Source Security Tools
-
-### [LogSentry](https://github.com/MMSolver/logsentry) — SSH/auth log attack detector
-Python CLI that flags brute-force, user-enumeration and successful-breach patterns in SSH logs, each mapped to **MITRE ATT&CK** (T1110, T1078). Built test-first (29 pytest tests, GitHub Actions CI), with memory-safe streaming and XSS-safe HTML reports.
-`Python` · `TDD` · `MITRE ATT&CK` · `Blue-Team`
-
-### [SPECTER](https://github.com/MMSolver/specter) — multi-agent recon & analysis framework
-For **authorized** pentest/CTF: a hierarchical agent swarm that maps a target, fingerprints services and produces a MITRE-mapped, prioritized attack plan. Every network action passes a hard **scope guard**; it plans, it never auto-executes. 33 tests, live web dashboard.
-`Python` · `Multi-Agent` · `Offensive Security` · `MITRE ATT&CK`
-
-### [AI Support Desk](https://github.com/MMSolver/ai-support-desk) — AI-assisted support platform
-Ticket triage with OpenAI structured output, treating model output as untrusted input (shared Zod validation), with a human-in-the-loop "needs review" fallback, rate limiting and CSP security headers. 94 tests (Vitest + Playwright).
-`Next.js` · `TypeScript` · `OpenAI` · `Secure Coding`
+Araçlarımı ve ürünlerimi **Claude Code** ile AI destekli, test öncelikli bir iş akışıyla geliştiriyorum. Benim odağım güvenlik tarafı: tehdit modelleme, erişim kontrolü tasarımı ve bunu otomatik saldırı testleriyle kanıtlamak.
 
 ---
 
-## 🚀 Products I've Shipped
+## 🛡️ Güvenlik Araçlarım
 
-> Source code is private (own SaaS) or client-owned, so these link to the live products rather than a repo.
+### [LogSentry](https://github.com/MMSolver/logsentry) — SSH/auth log saldırı tespit aracı
+SSH loglarında brute-force, kullanıcı keşfi (user enumeration) ve başarılı sızma örüntülerini yakalayan Python CLI aracı. Her bulgu **MITRE ATT&CK** ile eşleniyor (T1110, T1078). Kayan pencere (sliding window) ile tespit, LOW→CRITICAL önem puanlaması, büyük dosyalar için bellek dostu satır satır okuma ve XSS'e karşı korumalı HTML rapor. 29 pytest testi, GitHub Actions CI.
+`Python` · `Blue Team` · `Tehdit Tespiti` · `MITRE ATT&CK`
 
-### SporPilot — sports-school management SaaS · [sporpilot.vercel.app](https://sporpilot.vercel.app/)
-My own multi-tenant SaaS. Role-based access enforced in the database with **Row Level Security across all 31 public tables (105 policies)** — a coach only sees their own students, with full cross-club data isolation. The AI club assistant receives only summarized data with names pseudonymized; phone and national-ID numbers are never sent. 214 Playwright tests.
-`Next.js` · `Supabase (PostgreSQL)` · `RLS` · `Google Gemini`
-
-### Uğur Kuruyemiş — e-commerce platform · [ugurkuruyemis.com.tr](https://ugurkuruyemis.com.tr)
-Production e-commerce platform delivered for a two-branch retail business: **20 data models, 18 API routes, 45 pages**. Authentication (Auth.js + bcrypt), middleware role control, Redis rate limiting, Zod input validation and allow-list HTML sanitization.
-`Next.js` · `TypeScript` · `Prisma` · `PostgreSQL` · `API Security`
+### [SPECTER](https://github.com/MMSolver/specter) — çok ajanlı keşif ve analiz çerçevesi
+**Yetkili** sızma testi ve CTF çalışmaları için: hedefi haritalayan, servisleri tanımlayan ve MITRE eşlemeli, önceliklendirilmiş bir saldırı planı çıkaran hiyerarşik ajan sistemi. Her ağ işlemi katı bir **kapsam koruyucusundan (scope guard)** geçer. Sadece plan yapar, istismarı asla kendiliğinden çalıştırmaz (insan onayı şart). 33 test, canlı web paneli.
+`Python` · `Offensive Security` · `Keşif` · `AI Ajanları`
 
 ---
 
-## 🧰 Toolbox
+## 🔐 Gerçek Ürünlerde Güvenlik Testi
 
-**Offensive:** Burp Suite · SQLMap · ffuf · Gobuster · Nmap · Metasploit · Hydra · OWASP Top 10 · Kali Linux · Hack The Box
-**Defensive:** log analysis · brute-force / credential-stuffing detection · Wireshark · tcpdump · MITRE ATT&CK
-**Build:** Python · TypeScript · Next.js · PostgreSQL · Supabase · Prisma · LLM integration (structured output, data masking, human-in-the-loop) · TDD · Git · CI
+> Claude Code ile geliştirildi. Kaynak kodu gizli (kendi SaaS ürünüm) ya da müşteriye ait olduğu için canlı ürünlere bağlantı veriliyor.
+
+### Sportudent — spor okulları için çok kiracılı SaaS · [sportudent.com](https://sportudent.com)
+Canlıda, ilk ödeme yapan müşterisi olan bir ürün. Okullar arası veri izolasyonunu tasarladım ve ona saldırdım:
+- **Okullar arası saldırı testi: 2.154 kontrol, hiçbir sızıntı yok.** 430 görünürlük kontrolü, 1.404 doğrudan yazma denemesi (başka okulun verisini güncelleme/silme/ekleme, kendi kaydını başka okula taşıma, kendi rolünü yükseltme) ve 80 fonksiyon üzerinde 320 **IDOR** çağrısı.
+- **Testin kendisi de test edildi:** Kasıtlı olarak bir açık açıldığında test başarısız oluyor. Yani test gerçekten yetki duvarına ulaşıyor.
+- Herkese açık şemadaki her tabloda Row Level Security (RLS). 44 `SECURITY DEFINER` fonksiyonun hepsinde yetki kontrolü. Anonim bağlantılar için 128–192 bit rastgele token.
+- AI asistanına sadece özet veri gider, isimler takma adla değiştirilir. Telefon ve TC kimlik numarası asla gönderilmez.
+
+`PostgreSQL RLS` · `IDOR` · `Erişim Kontrolü` · `Supabase`
+
+### [AI Support Desk](https://github.com/MMSolver/ai-support-desk) — LLM çıktısına güvenilmeyen girdi gibi davranmak
+Yapay zekâ ile destek talebi sınıflandırma. Model çıktısı kullanıcı girdisi gibi doğrulanıyor (ortak Zod şemaları). AI hata verirse talep "inceleme gerekli" olarak insana düşüyor (human-in-the-loop). IP bazlı istek sınırlama (rate limiting) ve CSP güvenlik başlıkları. 94 test (Vitest + Playwright).
+`LLM Güvenliği` · `Girdi Doğrulama` · `Güvenli Kodlama`
+
+### Uğur Kuruyemiş — e-ticaret platformu · [ugurkuruyemis.com.tr](https://ugurkuruyemis.com.tr)
+İki şubeli bir mağaza için e-ticaret: kimlik doğrulama (Auth.js + bcrypt), middleware ile rol kontrolü, Redis ile istek sınırlama, Zod ile girdi doğrulama ve izinli etiket listesiyle HTML temizleme.
+`Kimlik Doğrulama` · `Rate Limiting` · `API Güvenliği`
 
 ---
 
-## 📚 Learning Path
+## 🧰 Kullandığım Araçlar
 
-- **Cybersecurity training** — Jul 2026 → Oct 2026 (network security & penetration testing, hands-on)
-- **Full-Stack Development program** — Oct 2026 → Jul 2027 (10 months, internship-backed, final project phase)
+**Keşif ve OSINT:** Nmap · masscan · Maltego · theHarvester
+**Web uygulama:** Burp Suite · SQLMap · ffuf · Gobuster · Nikto · OWASP Top 10 (SQLi, XSS, IDOR)
+**İstismar:** Metasploit · Netcat · Hydra
+**Savunma:** log analizi · brute-force / credential-stuffing tespiti · Wireshark · tcpdump · Nessus · MITRE ATT&CK
+**Platformlar:** Kali Linux · Linux · Hack The Box
+**Otomasyon:** Python · Docker · Git · CI · Claude Code
 
-> **Learn deeply. Build practically. Solve real problems — on both sides of security.**
+---
+
+## 📚 Eğitim
+
+- **Siber güvenlik eğitimi** — Tem 2026 → Eki 2026 · ağ güvenliği ve sızma testi, uygulamalı lab çalışmaları
+- **Yazılım geliştirme programı** — Eki 2026 → Tem 2027 (devam ediyor)
+- **Sertifikalar** — Cisco: Introduction to Cybersecurity · Endpoint Security
