@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <b>Open to</b> &nbsp;·&nbsp; Junior Penetration Tester &nbsp;·&nbsp; SOC Analyst &nbsp;·&nbsp; Security Analyst &nbsp;·&nbsp; <i>İstanbul / Remote</i>
+  <b>Open to</b> &nbsp;·&nbsp; Penetration Tester &nbsp;·&nbsp; Security Analyst &nbsp;·&nbsp; SOC Analyst &nbsp;·&nbsp; Security-focused SaaS &amp; Automation &nbsp;·&nbsp; <i>İstanbul / Remote</i>
 </p>
 
 ---
