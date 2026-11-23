@@ -8,6 +8,10 @@
   <img src="https://img.shields.io/badge/Location-İstanbul,%20Türkiye-21262d?style=for-the-badge&logo=googlemaps&logoColor=00ff9c&labelColor=0d1117" alt="Location">
 </p>
 
+<p align="center">
+  <b>Open to</b> &nbsp;·&nbsp; Junior Penetration Tester &nbsp;·&nbsp; SOC Analyst &nbsp;·&nbsp; Security Analyst &nbsp;·&nbsp; <i>İstanbul / Remote</i>
+</p>
+
 ---
 
 ## About
@@ -42,6 +46,11 @@ SSH loglarında **brute-force**, **user enumeration** ve **successful breach** �
 - 4 rapor formatı (terminal, JSON, CSV, HTML), SIEM/SOC iş akışına uygun
 - 29 **pytest** testi, **GitHub Actions CI**
 
+<p align="center">
+  <img src="assets/logsentry-demo.svg" width="92%" alt="LogSentry gerçek terminal çıktısı: successful_breach CRITICAL, brute_force ve user_enumeration MEDIUM">
+  <br><sub>Gerçek çıktı · <code>logsentry analyze demo.log</code> · repodaki örnek log</sub>
+</p>
+
 <img src="https://img.shields.io/badge/Python-21262d?style=flat-square&logo=python&logoColor=00ff9c"> <img src="https://img.shields.io/badge/Blue%20Team-21262d?style=flat-square"> <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-21262d?style=flat-square"> <img src="https://img.shields.io/badge/Threat%20Detection-21262d?style=flat-square">
 
 ### [SPECTER](https://github.com/MMSolver/specter) · multi-agent recon & analysis framework
@@ -52,6 +61,25 @@ SSH loglarında **brute-force**, **user enumeration** ve **successful breach** �
 - Sadece plan yapar, exploit'i asla kendiliğinden çalıştırmaz (**human approval** şart)
 - CVE adayları için **false-positive** kontrolü yapan konsensüs motoru
 - 33 test, canlı web dashboard
+
+<details>
+<summary><b>Architecture</b> · agent'lar birbirini çağırmaz, ortak knowledge base üzerinden event ile haberleşir</summary>
+
+```mermaid
+flowchart TB
+    O["Orchestrator<br/>strategy · task routing"]
+    O --> R["Recon<br/>ports · services · versions"]
+    O --> E["Enumeration + Web<br/>content discovery · headers"]
+    O --> V["Vuln Analyst<br/>CVE mapping · consensus debate"]
+    O --> X["Exploit Strategist<br/>MITRE ATT&CK kill-chain plan"]
+    O --> P["Reporter<br/>live dashboard · HTML report"]
+    R & E & V & X & P <--> KB[("Shared Knowledge Base<br/>hosts · ports · services · findings")]
+    SG{{"Scope Guard"}} -.->|every network action| R
+    SG -.->|every network action| E
+    X --> H[/"Human approval required<br/>plans only, never auto-exploits"/]
+```
+
+</details>
 
 <img src="https://img.shields.io/badge/Python-21262d?style=flat-square&logo=python&logoColor=00ff9c"> <img src="https://img.shields.io/badge/Offensive%20Security-21262d?style=flat-square"> <img src="https://img.shields.io/badge/Recon-21262d?style=flat-square"> <img src="https://img.shields.io/badge/AI%20Agents-21262d?style=flat-square">
 
@@ -73,6 +101,15 @@ Spor okulları için canlıda olan, ilk ödeme yapan müşterisi bulunan bir ür
     <td align="center"><h3>44 / 44</h3>SECURITY DEFINER<br>function with authz</td>
   </tr>
 </table>
+
+```mermaid
+flowchart LR
+    ATT["Attacker · School B<br/>3 roles + no-school account"] ==> SUITE["Attack suite · 2,154 checks<br/>Visibility · 430<br/>Direct write · 1,404<br/>RPC IDOR · 320"]
+    SUITE ==>|try to reach| A[("School A<br/>victim data")]
+    A --> C{"Changed?"}
+    C -->|No| OK(["0 leaks"])
+    M["Mutation check<br/>deliberate hole"] -.->|suite must fail| SUITE
+```
 
 - **430 visibility** kontrolü ve **1.404 direct-write** denemesi: başka okulun verisini güncelleme/silme/ekleme, kendi kaydını başka okula taşıma, **privilege escalation**. Hepsi engellendi.
 - **Mutation-tested:** Kasıtlı olarak bir açık açıldığında test başarısız oluyor. Yani test gerçekten yetki duvarına ulaşıyor.
