@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="Mehmet Mutioğlu — Cybersecurity · Penetration Testing · Security Tooling">
+  <img src="assets/banner.svg" width="100%" alt="Mehmet Mutioğlu — AI-Native Full-Stack Developer · Cybersecurity">
 </p>
 
 <p align="center">
@@ -9,24 +9,26 @@
 </p>
 
 <p align="center">
-  <b>Open to</b> &nbsp;·&nbsp; Penetration Tester &nbsp;·&nbsp; Security Analyst &nbsp;·&nbsp; SOC Analyst &nbsp;·&nbsp; Security-focused SaaS &amp; Automation &nbsp;·&nbsp; <i>İstanbul / Remote</i>
+  <b>Open to</b> &nbsp;·&nbsp; Full-Stack Developer &nbsp;·&nbsp; Penetration Tester &nbsp;·&nbsp; Security Analyst &nbsp;·&nbsp; SOC Analyst &nbsp;·&nbsp; <i>İstanbul / Remote</i>
 </p>
 
 ---
 
 ## About
 
-Cybersecurity alanında **offensive** ve **defensive** tarafta birlikte çalışıyorum. Yetkili lab ve CTF ortamlarında (Hack The Box) uçtan uca saldırı senaryoları yürütüyorum: **recon → web application testing → exploitation**. Bu saldırgan bakış açısını kendi güvenlik araçlarıma ve gerçek ürünlere yönelik **attack test**'lere dönüştürüyorum.
+Canlıda çalışan yazılımı kuruyorum, sonra ona saldırarak test ediyorum. **Claude Code** ile **AI-native full-stack** geliştirme yapıyorum (SaaS, e-ticaret, AI entegrasyonu, otomasyon); **Kali Linux** ile aynı sisteme saldırgan gözüyle bakıyorum.
 
-Araçlarımı ve ürünlerimi **Claude Code** ile **AI-assisted, test-first** bir iş akışıyla geliştiriyorum. Odağım güvenlik tarafı: **threat modeling**, **access control** tasarımı ve bunu otomatik saldırı testleriyle kanıtlamak.
+Yetkili lab ve CTF ortamlarında (Hack The Box) uçtan uca çalışıyorum: **recon → web application testing → exploitation**. Bu bakışı kendi güvenlik araçlarıma ve kendi ürünlerime yönelik **attack test**'lere dönüştürüyorum: **threat modeling**, **access control** tasarımı ve bunu otomatik testle kanıtlamak.
 
 <table>
   <tr>
+    <th align="left">Full-Stack (AI-Native)</th>
     <th align="left">Offensive Security</th>
     <th align="left">Defensive Security</th>
     <th align="left">Product Security</th>
   </tr>
   <tr>
+    <td valign="top">Next.js · TypeScript · React<br>PostgreSQL · Supabase · Prisma<br>Auth, RBAC, REST APIs<br>Playwright · Vitest · CI</td>
     <td valign="top">Recon &amp; OSINT<br>Web application testing<br>OWASP Top 10 (SQLi, XSS, IDOR)<br>Exploitation (lab / CTF)</td>
     <td valign="top">Log analysis<br>Brute-force &amp; credential-stuffing detection<br>MITRE ATT&amp;CK mapping<br>Traffic analysis</td>
     <td valign="top">Multi-tenant isolation (RLS)<br>Cross-tenant attack testing<br>LLM output validation<br>Rate limiting &amp; input validation</td>
@@ -94,13 +96,13 @@ flowchart TB
 
 ---
 
-## Security Testing on Real Products
+## Products I Built & Attacked
 
-> Claude Code ile geliştirildi. Kaynak kodu private (kendi SaaS ürünüm) ya da müşteriye ait olduğu için canlı ürünlere bağlantı veriliyor.
+> Claude Code ile AI-native geliştirdim, sonra güvenliğini test ettim. Kaynak kodu private (kendi SaaS ürünüm) ya da müşteriye ait olduğu için canlı ürünlere bağlantı veriliyor.
 
 ### Sportudent · multi-tenant SaaS · [sportudent.com](https://sportudent.com)
 
-Spor okulları için canlıda olan, ilk ödeme yapan müşterisi bulunan bir ürün. Okullar arası **tenant isolation** modelini tasarladım ve ona saldırdım:
+Spor okulları için canlıda olan, ödeme alan müşterisi bulunan kendi SaaS ürünüm: kayıt, yoklama, aidat, rol bazlı yetkilendirme, AI kulüp asistanı. **Next.js, TypeScript, Supabase (PostgreSQL), 60 tablo, 424 Playwright testi.** Okullar arası **tenant isolation** modelini tasarladım ve ona saldırdım:
 
 <table>
   <tr>
@@ -135,13 +137,16 @@ AI ile destek talebi sınıflandırma. Model çıktısı kullanıcı girdisi gib
 
 ### Uğur Kuruyemiş · e-commerce platform · [ugurkuruyemis.com.tr](https://ugurkuruyemis.com.tr)
 
-İki şubeli bir mağaza için e-ticaret. **Authentication** (Auth.js + bcrypt), middleware ile **role-based access control**, Redis ile **rate limiting**, Zod ile **input validation** ve **allow-list HTML sanitization**.
+İki şubeli bir mağazaya teslim ettiğim e-ticaret platformu ve admin paneli: **Next.js, Prisma, PostgreSQL; 20 veri modeli, 18 REST API, 45 sayfa.** Güvenlik tarafında **authentication** (Auth.js + bcrypt), middleware ile **role-based access control**, Redis ile **rate limiting**, Zod ile **input validation** ve **allow-list HTML sanitization**.
 
 <img src="https://img.shields.io/badge/Authentication-21262d?style=flat-square"> <img src="https://img.shields.io/badge/Rate%20Limiting-21262d?style=flat-square"> <img src="https://img.shields.io/badge/API%20Security-21262d?style=flat-square">
 
 ---
 
 ## Toolbox
+
+**Full-Stack (AI-Native)**<br>
+<img src="https://img.shields.io/badge/Next.js-21262d?style=for-the-badge&logo=nextdotjs&logoColor=00ff9c"> <img src="https://img.shields.io/badge/TypeScript-21262d?style=for-the-badge&logo=typescript&logoColor=00ff9c"> <img src="https://img.shields.io/badge/React-21262d?style=for-the-badge&logo=react&logoColor=00ff9c"> <img src="https://img.shields.io/badge/PostgreSQL-21262d?style=for-the-badge&logo=postgresql&logoColor=00ff9c"> <img src="https://img.shields.io/badge/Supabase-21262d?style=for-the-badge&logo=supabase&logoColor=00ff9c"> <img src="https://img.shields.io/badge/Prisma-21262d?style=for-the-badge&logo=prisma&logoColor=00ff9c"> <img src="https://img.shields.io/badge/Playwright-21262d?style=for-the-badge"> <img src="https://img.shields.io/badge/Vercel-21262d?style=for-the-badge&logo=vercel&logoColor=00ff9c">
 
 **Recon & OSINT**<br>
 <img src="https://img.shields.io/badge/Nmap-21262d?style=for-the-badge"> <img src="https://img.shields.io/badge/masscan-21262d?style=for-the-badge"> <img src="https://img.shields.io/badge/Maltego-21262d?style=for-the-badge"> <img src="https://img.shields.io/badge/theHarvester-21262d?style=for-the-badge">
